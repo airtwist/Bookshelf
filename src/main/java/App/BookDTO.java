@@ -1,29 +1,21 @@
-package com.example.demo;
+package App;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import org.springframework.data.annotation.Id;
 
-@Entity
-public class Book {
-
-    @jakarta.persistence.Id
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class BookDTO {
     private long id;
 
-    @Column(nullable = false, unique = true)
     private String title;
 
-    @Column(nullable = false)
     private String author;
 
-    @Column(nullable = true)
     private String cover;
 
-    @Column(nullable = true)
+    private Integer rating;
+
     private String review;
 
     public String getReview() {
@@ -34,17 +26,6 @@ public class Book {
         this.review = review;
     }
 
-    public Integer getRating() {
-        return rating;
-    }
-
-    public void setRating(Integer rating) {
-        this.rating = rating;
-    }
-
-    @Column(nullable = true)
-    private Integer rating;
-
     public String getCover() {
         return cover;
     }
@@ -53,7 +34,15 @@ public class Book {
         this.cover = cover;
     }
 
-    public Long getId() {
+    public Integer getRating() {
+        return rating;
+    }
+
+    public void setRating(Integer rating) {
+        this.rating = rating;
+    }
+
+    public long getId() {
         return id;
     }
 

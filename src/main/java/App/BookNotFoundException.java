@@ -1,4 +1,4 @@
-package com.example.demo;
+package App;
 
 public class BookNotFoundException extends RuntimeException {
 

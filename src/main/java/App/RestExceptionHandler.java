@@ -1,4 +1,4 @@
-package com.example.demo;
+package App;
 
 import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.dao.DataIntegrityViolationException;
