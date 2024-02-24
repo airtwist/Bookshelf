@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: Spring Bookshelf
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookshelf
+    driverClassName: org.postgresql.Driver
+    username: root
+    password: fgsfds
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+  sql:
+    init:
+      mode: always
+      #schema-locations: database.initDB.sql
+      #data-locations: database.populateDB.sql
+server:
+  error:
+    path: /error2
