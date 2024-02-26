@@ -1,10 +1,17 @@
 package App;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+
+
 import java.util.List;
+@Tag(
+        name = "Книги",
+        description = "Все методы для работы с книгами"
+)
 
 @RestController
 @RequestMapping("/api/books")

@@ -6,3 +6,4 @@ CREATE TABLE IF NOT EXISTS books
     cover VARCHAR(254)  NOT NULL ,
     review VARCHAR(254)  NOT NULL
     );
+

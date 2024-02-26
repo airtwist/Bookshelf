@@ -21,3 +21,6 @@ spring:
 server:
   error:
     path: /error2
+springdoc:
+  enabled: on
+
