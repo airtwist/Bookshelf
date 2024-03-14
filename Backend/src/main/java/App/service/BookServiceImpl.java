@@ -5,17 +5,16 @@ import App.entity.Book;
 import App.exception.BookNotFoundException;
 import App.mapper.BooksMapper;
 import App.repository.BookRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@AllArgsConstructor
 @Service
 public class BookServiceImpl implements BookService{
 
-    public BookServiceImpl(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
-    }
 
     private BookRepository bookRepository;
     @Override
